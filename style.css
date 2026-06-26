@@ -1,0 +1,596 @@
+body {
+    background-color: black;
+    font-family: "Google Sans Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400; 
+    font-style: normal;
+    font-variation-settings: "MONO" 1;
+    margin: 0;
+    padding: 0;
+}
+
+.main-button {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 50px;
+    padding: 8px 40px;
+    width: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px); 
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.nav-btn {
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 15px;
+    transition: 0.3s ease; 
+}
+
+.nav-btn:hover {
+    background-color: yellow;
+    color: black;
+    transition: 0.6s ease;
+}
+
+.main-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    padding: 0 10%; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.left-content {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+
+h1,
+h2 {
+    color: #A6A6A6;
+    margin-bottom: 10px;
+    font-size: 3rem;
+}
+
+.yellow, .sint-yellow {
+    color: yellow;
+}
+
+p {
+    color: white;
+    text-align: start;
+    font-size: 1rem;
+    max-width: 450px;
+    line-height: 1.5;
+}
+
+.skills h2 {
+    color: #A6A6A6;
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.skill-icons {
+    display: flex;
+    gap: 30px; 
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: yellow;
+}
+
+.right-content {
+    flex: 1; 
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.img {
+    height: 400px;
+    background-color: #A6A6A6;
+    border-radius: 15px; 
+    object-fit: cover;
+}
+
+.project {
+    background-color: white;
+    padding: 0px 10px;
+    border-radius: 20px;
+    transition: 0.3s;
+    text-decoration: none;
+    color: black;
+}
+
+.card-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:500px;
+}
+
+.card{
+    background-color: blue;
+    height: 500px;
+    width: 500px;
+}
+.material-symbols-outlined{
+    color:yellow;
+}
+
+.about-page-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 5%;
+    padding-bottom: 80px;
+}
+
+.about-header h1 {
+    font-size: 3.5rem;
+}
+
+.about-grid {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+
+.about-story {
+    flex: 3; 
+}
+
+.about-story h2 {
+    font-size: 2rem;
+}
+
+.about-story p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    max-width: 100%; 
+    color: #e0e0e0;
+}
+
+.about-facts {
+    flex: 2; 
+}
+
+.fact-box {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+}
+
+.fact-box h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.fact-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.fact-box ul li {
+    color: #A6A6A6;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    padding-left: 20px;
+    position: relative;
+}
+
+.fact-box ul li::before {
+    content: '>';
+    color: yellow;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .about-grid {
+        flex-direction: column;
+        gap: 40px;
+    }
+}
+
+/* =========================================
+   RESUME PAGE LAYOUT
+========================================= */
+.resume-section {
+    padding: 20px 5% 80px 5%;
+    display: flex;
+    justify-content: center;
+}
+
+.resume-container {
+    display: flex;
+    align-items: flex-start; /* Aligns items to the top */
+    gap: 60px;
+    max-width: 1100px;
+    width: 100%;
+}
+
+/* LEFT SIDE: Image styling */
+.resume-left {
+    flex: 1;
+    position: relative;
+}
+
+/* Recreates the solid background box from the photo, but in yellow */
+.img-backdrop {
+    background-color: rgba(255, 255, 0, 0.1); /* Subtle yellow backdrop */
+    border: 1px solid rgba(255, 255, 0, 0.3);
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.resume-img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    background-color: white;
+}
+
+/* RIGHT SIDE: Content styling */
+.resume-right {
+    flex: 1.2; /* Gives the text slightly more room than the image */
+}
+
+/* Creates the vertical line for the timeline */
+.timeline-item {
+    border-left: 2px solid yellow;
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+/* Creates the little dots on the timeline */
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -7px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    border: 2px solid yellow;
+    border-radius: 50%;
+}
+
+/* The Skill Badges Grid (Stolen from the photo!) */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: 15px;
+}
+
+.skill-badge {
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 0.9rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* The Download Button */
+.btn-download {
+    background-color: yellow;
+    color: black;
+    text-decoration: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    transition: 0.3s ease;
+}
+
+.btn-download:hover {
+    background-color: white;
+    color: black;
+    transform: translateY(-2px);
+}
+
+/* Mobile Fixes */
+@media (max-width: 768px) {
+    .resume-container {
+        flex-direction: column;
+    }
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* =========================================
+   CONTACT PAGE LAYOUT
+========================================= */
+.contact-section {
+    padding: 0px 5% 80px 5%;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contact-container {
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+/* LEFT SIDE: Info Cards */
+.contact-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateX(10px); /* Slides slightly to the right on hover */
+    border-color: yellow;
+}
+
+.yellow-icon {
+    font-size: 2.5rem;
+    color: yellow;
+}
+
+/* RIGHT SIDE: Contact Form */
+.contact-right {
+    flex: 1.5; /* Gives the form a bit more room */
+    background: rgba(255, 255, 255, 0.02);
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    gap: 20px;
+}
+
+/* Form Inputs Styling */
+.contact-form input, 
+.contact-form textarea {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    font-family: "Google Sans Code", monospace;
+    transition: border-color 0.3s ease;
+    width: 100%;
+}
+
+.full-width {
+    width: 100%;
+}
+
+/* Changes border to yellow when typing */
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    outline: none;
+    border-color: yellow; 
+    background: rgba(255, 255, 255, 0.08);
+}
+
+/* Submit Button */
+.btn-submit {
+    background-color: yellow;
+    color: black;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    font-family: "Google Sans Code", monospace;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-submit:hover {
+    background-color: white;
+    transform: translateY(-3px);
+}
+
+/* Mobile Fixes */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+    .input-group {
+        flex-direction: column;
+    }
+}
+
+.blue{
+    color: skyblue;
+}
+
+@media (max-width: 900px) {
+    /* Stacks the hero section vertically */
+    .main-section {
+        flex-direction: column-reverse; /* Puts image on top, text on bottom */
+        text-align: center;
+        gap: 30px;
+        padding: 0 5%;
+    }
+
+    /* Centers the text and icons */
+    .left-content {
+        align-items: center;
+    }
+
+    p {
+        text-align: center;
+    }
+
+    /* Shrinks the nav bar to fit screens */
+    .nav-buttons {
+        width: 90%;
+        padding: 10px 20px;
+    }
+
+    /* Stacks the projects grid into 1 column */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* =========================================
+PROJECTS SECTION
+========================================= */
+.projects-section {
+padding: 0 10% 80px 10%;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.projects-section h2 {
+font-size: 2.5rem;
+}
+
+.projects-grid {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 40px;
+}
+
+.project-card {
+background: rgba(255, 255, 255, 0.05); /* Slightly more visible glass effect */
+border: 1px solid rgba(255, 255, 255, 0.1);
+border-radius: 15px;
+overflow: hidden; /* Keeps the image strictly inside the rounded corners */
+display: flex;
+flex-direction: column;
+transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+transform: translateY(-8px);
+border-color: yellow;
+box-shadow: 0 10px 30px rgba(255, 255, 0, 0.1); /* Glowing yellow shadow on hover */
+}
+
+/* Image Wrapper Styling */
+.project-img-wrapper {
+width: 100%;
+height: 220px;
+overflow: hidden;
+border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+background-color: #222; /* Fallback dark color if image is missing */
+transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-img {
+transform: scale(1.05); /* Slight zoom effect on the image when hovering the card */
+}
+
+.project-content {
+padding: 25px;
+display: flex;
+flex-direction: column;
+flex: 1; /* Ensures the link is pushed to the bottom if text lengths vary */
+}
+
+.project-content p {
+font-size: 0.95rem;
+margin-bottom: 20px;
+max-width: 100%;
+}
+
+.project-tech {
+display: flex;
+gap: 10px;
+margin-bottom: 25px;
+flex-wrap: wrap;
+}
+
+.project-tech span {
+background: rgba(255, 255, 0, 0.1);
+color: yellow;
+padding: 5px 12px;
+border-radius: 5px;
+font-size: 0.85rem;
+font-weight: bold;
+}
+
+
+.project-link {
+margin-top: auto; 
+color: white;
+text-decoration: none;
+font-weight: bold;
+display: inline-flex;
+align-items: center;
+gap: 8px;
+transition: color 0.3s ease;
+}
+
+.project-link:hover {
+color: yellow;
+}
+
+.red-line{
+    text-decoration: underline wavy red;
+}
